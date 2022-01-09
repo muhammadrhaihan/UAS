@@ -21,9 +21,9 @@ public class FramePelanggan extends javax.swing.JFrame {
         
        
         initComponents();
-        new dbCRUD_19630712().setJudulTabel(tabelPelanggan, Judul)  ;      
-        new dbCRUD_19630712().setLebarKolom(tabelPelanggan, LebarKolom)  ;
-        new dbCRUD_19630712().tampilTabel(tabelPelanggan, SQL, Judul);
+        new dbCRUD_19630374().setJudulTabel(tabelPelanggan, Judul)  ;      
+        new dbCRUD_19630374().setLebarKolom(tabelPelanggan, LebarKolom)  ;
+        new dbCRUD_19630374().tampilTabel(tabelPelanggan, SQL, Judul);
                 
     }
     /**
@@ -181,24 +181,24 @@ public class FramePelanggan extends javax.swing.JFrame {
     private void simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanActionPerformed
 
         this.isipelanggan = new String[]{id_pelanggan.getText(),nama.getText(),alamat.getText(),telp.getText()};
-        new dbCRUD_19630712().SimpanDinamis("Pelanggan", fieldpelanggan, isipelanggan);
+        new dbCRUD_19630374().SimpanDinamis("Pelanggan", fieldpelanggan, isipelanggan);
     }//GEN-LAST:event_simpanActionPerformed
 
     private void ubahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubahActionPerformed
 
         this.isipelanggan = new String[]{id_pelanggan.getText(),nama.getText(),alamat.getText(),telp.getText()};
 
-        new dbCRUD_19630712().UbahDinamis("Pelanggan", fieldpelanggan, isipelanggan, "id_pelanggan", id_pelanggan.getText());
+        new dbCRUD_19630374().UbahDinamis("Pelanggan", fieldpelanggan, isipelanggan, "id_pelanggan", id_pelanggan.getText());
     }//GEN-LAST:event_ubahActionPerformed
 
     private void hapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusActionPerformed
         this.isipelanggan = new String[]{id_pelanggan.getText()};
-        new dbCRUD_19630712().HapusDinamis("Pelanggan", "id_pelanggan", id_pelanggan.getText());
+        new dbCRUD_19630374().HapusDinamis("Pelanggan", "id_pelanggan", id_pelanggan.getText());
     }//GEN-LAST:event_hapusActionPerformed
 
     private void reportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportActionPerformed
         // TODO add your handling code here:
-        new dbCRUD_19630712().tampilLaporan("src/Laporan/reportpelanggan.jrxml","SELECT*FROM pelanggan");
+        new dbCRUD_19630374().tampilLaporan("src/Laporan/reportpelanggan.jrxml","SELECT*FROM pelanggan");
     }//GEN-LAST:event_reportActionPerformed
 
     /**

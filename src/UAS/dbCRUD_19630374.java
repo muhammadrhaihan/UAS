@@ -1,4 +1,4 @@
-/*
+X`/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -32,7 +32,7 @@ import net.sf.jasperreports.view.JasperViewer;
  *
  * @author ACER
  */
-public class dbCRUD_19630712 {
+public class dbCRUD_19630374 {
     
 
 
@@ -41,15 +41,15 @@ public class dbCRUD_19630712 {
 
 
     
-    String jdbcUrl ="jdbc:mysql://localhost/19630712_dbsipenjualanbarang";
+    String jdbcUrl ="jdbc:mysql://localhost/19630374_dbsipenjualanbarang";
     String username ="root";
     String password ="";
     
     Connection koneksi;
     
-    public dbCRUD_19630712(){}
+    public dbCRUD_19630374(){}
     
-    public dbCRUD_19630712(String url, String user, String pass) throws SQLException{
+    public dbCRUD_19630374(String url, String user, String pass) throws SQLException{
         
         
         try(Connection koneksi = DriverManager.getConnection(url, user, pass)){
